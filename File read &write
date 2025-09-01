@@ -1,0 +1,7 @@
+filename= input("Enter the file name to read: ")
+try:
+     with open(filename, "r") as file:   
+        content=file.read()
+     print("File read successfuly")
+except FileNotFoundError:
+      print("Error:file does not exist.")
